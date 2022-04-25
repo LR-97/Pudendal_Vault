@@ -1,0 +1,112 @@
+{
+  "main": {
+    "id": "33c2eb0425ac57e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "f739813af52dd5fd",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Code/Python/Cell_rdg.md",
+            "mode": "source",
+            "source": true
+          }
+        },
+        "group": "b6aa618c269ec4bb"
+      },
+      {
+        "id": "f3b29f41ab7213d6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Code/Python/Cell_rdg.md",
+            "mode": "preview",
+            "source": true
+          }
+        },
+        "group": "b6aa618c269ec4bb"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1ccd73b56a41fcb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "dd6a16ef226e2cbc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "86d4a9406ab524d2",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "db0660b28d4f437f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "6cf38875e01b7f0d",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff1317ea89d4e77c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9c9198de8e76d5d",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Code/Python/Cell_rdg.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f739813af52dd5fd",
+  "lastOpenFiles": [
+    "Code/Python/Cell_rdg.md",
+    "Code/Python/python scripts.md",
+    "Code/Python/CommandThresholdCalculation.md",
+    "python script.md",
+    "First note.md"
+  ]
+}
