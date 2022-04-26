@@ -31,16 +31,50 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 ### UpdateConfig
 - **Parameters**
 	- *MyCell*: The current axon, of type [[Cell_rdg#MRG class|MRG object]] 
-	-  *Name*: 
+	-  *Name*: Name of the curren cell, of form branch_root_id (ex. G_S2_10)
 - **Description**
-	- 
+	- Given a cell and the cell name, UpdateConfig loads the k-values along the fiber trajectory and assigns them to the transfer impedance attribute [[rx_xtra]] of their respective NEURON section. 
 
 - **Step-by-Step**
-	
+	- load to memory the voltages (k-values) file for the current electrode configuration and fiber name
+	- extract the voltages/k-values from the last column in the file. 
+		- _Note:_ values in the file are not listed in spatially sequential order. They are ordered in the same order the [[Cell_rdg#get_secs|get_secs()]] method iterates through MRG sections
+	- Iterate through the MRG sections using [[Cell_rdg#get_secs|get_secs()]] and assign 
+		- Set the rx_xtra attribute of the current section equal to its respective k-value
+			- _Note_: The k-values get scaled by 1e-6. [[Why?]]
+	- Return MyCell and the voltage values ndarray.
+
+### UpdateStim
+- **Parameters**
+- **Description**
+- **Step-by-step**
+
+### RunModel
+- **Parameters**
+- **Description**
+- **Step-by-step**
+
+### Target
+- **Parameters**
+- **Description**
+- **Step-by-step**
+
+### Trial
+- **Parameters**
+- **Description**
+- **Step-by-step**
+
+### Threshold
+- **Parameters**
+- **Description**
+- **Step-by-step**
 
 ## Suggestions for improvement
 - Instead of saving the upper and lower bound to a .txt file, save only the midpoint value.
 - Modifiy [[CommandThresholdCalculation#Model| Model(traj)]] to also take as a parameter the desired fiber diameter
+- Give UpdateConfig a more descriptive name
+- In UpdateConfig, get rid of the iSec index, instead use an enumerate() loop
+- UpdataConfig doesnt have to return anything, I think.
 
 ## Code I dont understand
 - sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")
