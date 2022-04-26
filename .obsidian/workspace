@@ -13,10 +13,11 @@
             "mode": "source",
             "source": true
           }
-        }
+        },
+        "group": "70214114c0103ecb"
       },
       {
-        "id": "02bff3561f72b537",
+        "id": "70d8f65f3471eeaf",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -25,7 +26,8 @@
             "mode": "preview",
             "source": true
           }
-        }
+        },
+        "group": "70214114c0103ecb"
       }
     ],
     "direction": "vertical"
@@ -103,6 +105,7 @@
   "lastOpenFiles": [
     "Code/Python/CommandThresholdCalculation.md",
     "Code/Python/Cell_rdg.md",
+    "Code/Python/rec_dict.md",
     "Cell_rdg.md",
     "Code/Python/python scripts.md",
     "python script.md",

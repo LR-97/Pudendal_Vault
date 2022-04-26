@@ -6,16 +6,15 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 
 ## Dependencies
 - [[Cell_rdg#MRG class|MRG]] from [[Cell_rdg|classes.Cell_rdg]] 
-- [[rec_dict]] from [[functions.rec_dict]]
+- [[rec_dict]] from [[rec_dict|functions.rec_dict]]
 - [[Voltages]] from [[functions.Voltages]] 
 
 ## Functions
 ### Model
-- 
+-  **Parameters**
+	- *Traj:* 
 - **Description**
 	- The "Model" function takes as input an axons [[trajectory]] and return an MRG NEURON model ([[Cell_rdg#MRG class|MRG Object]]) that follows the input trajectory. Additionally, it sets simulation parameters and creates a [[rec_dict|recording dictionary]] that records membrane voltage of each 'node' compartment of the axon model throughout the duration of the simulation.
-
--
 
 - **Step-by-Step**
 	- Set simulation parameters:
@@ -30,12 +29,11 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 	- Return the MRG object created
 
 ### UpdateConfig
-- **Description**
-	- 
-
 - **Parameters**
 	- *MyCell*: The current axon, of type [[Cell_rdg#MRG class|MRG object]] 
 	-  *Name*: 
+- **Description**
+	- 
 
 - **Step-by-Step**
 	
