@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "f739813af52dd5fd",
+        "id": "699672766351d289",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -13,11 +13,10 @@
             "mode": "source",
             "source": true
           }
-        },
-        "group": "b6aa618c269ec4bb"
+        }
       },
       {
-        "id": "f3b29f41ab7213d6",
+        "id": "c933af0b0d6c3d79",
         "type": "leaf",
         "state": {
           "type": "markdown",
@@ -26,8 +25,7 @@
             "mode": "preview",
             "source": true
           }
-        },
-        "group": "b6aa618c269ec4bb"
+        }
       }
     ],
     "direction": "vertical"
@@ -101,11 +99,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f739813af52dd5fd",
+  "active": "c933af0b0d6c3d79",
   "lastOpenFiles": [
     "Code/Python/Cell_rdg.md",
-    "Code/Python/python scripts.md",
     "Code/Python/CommandThresholdCalculation.md",
+    "Cell_rdg.md",
+    "Code/Python/python scripts.md",
     "python script.md",
     "First note.md"
   ]
