@@ -69,12 +69,15 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 - **Description**
 - **Step-by-step**
 
+## Main Code Section
+
 ## Suggestions for improvement
 - Instead of saving the upper and lower bound to a .txt file, save only the midpoint value.
 - Modifiy [[CommandThresholdCalculation#Model| Model(traj)]] to also take as a parameter the desired fiber diameter
 - Give UpdateConfig a more descriptive name
 - In UpdateConfig, get rid of the iSec index, instead use an enumerate() loop
 - UpdataConfig doesnt have to return anything, I think.
+- Encapsulate main code section inf a main() function and use an "if name == main" type statement.
 
 ## Code I dont understand
 - sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")
