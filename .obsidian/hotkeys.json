@@ -16,5 +16,14 @@
       ],
       "key": "-"
     }
+  ],
+  "creases:fold": [
+    {
+      "modifiers": [
+        "Alt",
+        "Mod"
+      ],
+      "key": "F"
+    }
   ]
 }

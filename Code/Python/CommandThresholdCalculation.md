@@ -44,12 +44,39 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 			- _Note_: The k-values get scaled by 1e-6. [[Why?]]
 	- Return MyCell and the voltage values ndarray.
 
-test
 
-### UpdateStim
+### UpdateStim 
 - **Parameters**
+	- I0: Pulse current amplitude in mA (TODO: verify it is mA)
 - **Description**
+	- UpdateStim is used to prepare a python dictionary that dictates the stimulus to be delivered during a stimulation. The dictionary contains a list of times when the stimulation is turned on and off, and a list of amplitudes for the respective times (I=I0 when on I=0 when off). Currently this function is used to create a square pulse with the stimulation delay and pulse width hard coded in the function.
 - **Step-by-step**
+	- set the stimulation onset delay time in ms
+	- create python list to store the times (in ms) at which stimulation amplitude changes 
+	- create python list to store stimulation amplitudes
+	- append the delay time (i.e. the time at which stimulation starts) to the times list
+	- append the delay time + the pulse width (i.e. the time at which stimulation ends) to the times list
+	- append I0 (i.e. the amplitude we want when stimulation starts) to the amplitudes list
+		- _Note:_ I0 is scaled by 1e3. [[Why?]]
+	- append 0 (i.e. the amplitude when the stimulation is turned off) to the amplitudes list
+	- store the times and amplitudes lists in a python dictionary (Stim dictionary)
+	- return the stim dictionary
+- **Code**
+	- ```py
+	def UpdateStim(I0):
+	    Times=list()
+	    Amps=list()
+	    On=10 #originally 20
+	    Times.append(On)    #time at which stim is turned on
+	    Times.append(On+0.21)   #time at which stim is turned off
+	    Amps.append(I0*1e3) #I0 scale by factor of 1000
+	    Amps.append(0)
+	    Stim=dict()
+	    Stim['t']=Times
+	    Stim['I']=Amps
+	    return(Stim)
+	``` 
+	````
 
 ### RunModel
 - **Parameters**
@@ -76,10 +103,11 @@ test
 ## Suggestions for improvement
 - Instead of saving the upper and lower bound to a .txt file, save only the midpoint value.
 - Modifiy [[CommandThresholdCalculation#Model| Model(traj)]] to also take as a parameter the desired fiber diameter
-- Give UpdateConfig a more descriptive name
-- In UpdateConfig, get rid of the iSec index, instead use an enumerate() loop
-- UpdataConfig doesnt have to return anything, I think.
-- Encapsulate main code section inf a main() function and use an "if name == main" type statement.
+- Give [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]] a more descriptive name
+- In [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]], get rid of the iSec index, instead use an enumerate() loop
+- [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]] doesnt have to return anything, I think.
+- Encapsulate main code section in a main() function and use an "if name == main" type statement.
+- In [[CommandThresholdCalculation#UpdateStim|UpdateStim]], make the stim delay (a.k.a. On) and the pulse width optional function parameter
 
 ## Code I dont understand
 - sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")
