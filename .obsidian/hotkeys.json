@@ -1,4 +1,13 @@
 {
+  "obsidian-git:clone-repo": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "9"
+    }
+  ],
   "obsidian-git:commit": [
     {
       "modifiers": [
@@ -17,13 +26,13 @@
       "key": "-"
     }
   ],
-  "creases:fold": [
+  "obsidian-git:pull": [
     {
       "modifiers": [
-        "Alt",
-        "Mod"
+        "Mod",
+        "Shift"
       ],
-      "key": "F"
+      "key": "0"
     }
   ]
 }

@@ -1,47 +1,29 @@
 {
   "main": {
-    "id": "33c2eb0425ac57e4",
+    "id": "92b3977afebc0f63",
     "type": "split",
     "children": [
       {
-        "id": "99884097a2771a45",
+        "id": "2e758699cfc8fa4a",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Pudendal Protocol.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "70214114c0103ecb"
-      },
-      {
-        "id": "70d8f65f3471eeaf",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Pudendal Protocol.md",
-            "mode": "preview",
-            "source": true
-          }
-        },
-        "group": "70214114c0103ecb"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1ccd73b56a41fcb3",
+    "id": "68005db80fa34975",
     "type": "split",
     "children": [
       {
-        "id": "dd6a16ef226e2cbc",
+        "id": "3a4104caa5e04d23",
         "type": "tabs",
         "children": [
           {
-            "id": "86d4a9406ab524d2",
+            "id": "369a38a22ed16183",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -49,7 +31,7 @@
             }
           },
           {
-            "id": "db0660b28d4f437f",
+            "id": "a9e43d0d22df3597",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -67,23 +49,22 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 231
   },
   "right": {
-    "id": "6cf38875e01b7f0d",
+    "id": "43d318b10e67d919",
     "type": "split",
     "children": [
       {
-        "id": "ff1317ea89d4e77c",
+        "id": "58b9e75a0de32f7b",
         "type": "tabs",
         "children": [
           {
-            "id": "a9c9198de8e76d5d",
+            "id": "90c59239733f7b6f",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pudendal Protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -101,16 +82,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "70d8f65f3471eeaf",
+  "active": "2e758699cfc8fa4a",
   "lastOpenFiles": [
-    "Pudendal Protocol.md",
-    "Code/Python/Cell_rdg.md",
+    "Code/Python/read_XML.py.md",
     "Code/Python/CommandThresholdCalculation.md",
-    "Literature/Untitled.md",
-    "Code/Python/python scripts.md",
-    "Code/Python/rec_dict.md",
-    "Cell_rdg.md",
-    "python script.md",
-    "First note.md"
+    "Pudendal Protocol.md",
+    "Code/Python/Cell_rdg.md"
   ]
 }
