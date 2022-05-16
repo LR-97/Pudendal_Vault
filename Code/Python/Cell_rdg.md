@@ -14,6 +14,7 @@ The Cell_rdg script contains the 'Cell' class and the 'MRG' class (which inherit
 	
 #### Class Methods:
 ##### _ _ Init _ _
+-  **Parameters**:
 - **Summary**: Initializes Cell object
 - **Step-by-step**:
 	- Save passed parameters

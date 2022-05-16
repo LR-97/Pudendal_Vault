@@ -109,14 +109,14 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 - Encapsulate main code section in a main() function and use an "if name == main" type statement.
 - In [[CommandThresholdCalculation#UpdateStim|UpdateStim]], make the stim delay (a.k.a. On) and the pulse width optional function parameter
 
-## Code I dont understand
-- sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")
+## Code I don't understand
+- ```sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")```
 	- line 22
 	- What is the path?
-- sys.path.insert(0, "/Applications/NEURON-7.7/nrn/lib/python")
+- ```sys.path.insert(0, "/Applications/NEURON-7.7/nrn/lib/python")```
 	- line 23
 	- What is the path?
-- Using both h.steps_per_ms and h.dt=1/h.steps_per_ms
+- Using both ```h.steps_per_ms``` and ``h.dt = 1/h.steps_per_ms``
 	- lines 34 & 35
 	- I believe its so that h.dt is an exact binary variable (confirm with someone) 
 	- If so, why is this important?
