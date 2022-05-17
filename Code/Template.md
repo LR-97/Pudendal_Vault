@@ -36,6 +36,15 @@ This is a template that can be copied and pasted to fill out documentation for t
 	- only state packages being used if they are niche (such as NEURON) but not if they are common (for example, NumPy). 
 	- Additionally, link to relevant documentation when possible. For example: [NEURON model file](https://neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/mechanisms/nmodl.html)  
 
+
+## Functionality (use if script is more functional than object oriented)
+### Major Function 1
+- Describe the major step in achieving major function one
+
+### Major Function 2
+- Describe the major step in achieving major function two
+- 
+
 ## Suggestions for improvement
 - If you spot potential improvements in performance or readability, feel free to list them here. This will be useful if we decide to refactor the code at a later date.
 
