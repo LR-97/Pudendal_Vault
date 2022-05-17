@@ -16,6 +16,24 @@ This matlab script creates a comsol model of a participant's electrode. It requi
 - Load the data in centerline.xml
 - isolate the centerline x, y, and z coordinates to their own vectors
 
+### Model Creation
+- Create a new model object in the comsol server
+- Create a 3D geometry with units of mm
+
+### Centerline Creation
+- Create an interpolation curve named 'ic1' using the centerline xml file as the source
+- Useful links: [Interpolation curve documentation](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_ref_geometry.14.038.html), [Interpolation curve API documentation](https://doc.comsol.com/5.4/doc/com.comsol.help.comsol/comsol_api_geom.39.090.html)
+
+### Create Plane normal to electrode tip
+- Create a comsol [work plane](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_api_geom.39.134.html) 'wp1' defined by the normal vector 'N0' spanning from the tip of the electrode centerline (point 'P0') to the next centerline point
+	- *Note:* This step assumes that the first point in the centerline xml file is the distal tip of the electrode. If that's not the case this would create issues.
+- Useful links: [Work plane documentation](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_ref_geometry.14.088.html), [Work plane API documentation](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_api_geom.39.134.html)
+
+### Sweep wire cross-section along centerline
+- On the normal plane 'wp1', draw a circle of diameter equal to the electrode diameter (1.27mm)
+- Create a sweep geometry object that extrudes the circle on 'wp1' (the elctrode cross-section) along the interpolation curve 'ic1' (the electrode centerline).
+- Useful links: [Sweep documentation](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_ref_geometry.14.085.html), [Sweep API documentation](https://doc.comsol.com/5.5/doc/com.comsol.help.comsol/comsol_api_geom.39.129.html)
+
 
 
 ## Suggestions for improvement
@@ -23,7 +41,7 @@ This matlab script creates a comsol model of a participant's electrode. It requi
 	- Line 4
 
 ## Code I don't understand
-- ```Here, copy paste any code portions that you are unsure what it does``` 
-	- Here, include the line number in the file to make it easy to find later
-	- Feel free to also list any thoughts that you think may be relevant later when reviewing  the confusing code with the rest of the group
+- ```geom1.feature('wp1').set('unite',true)``` 
+	- line 55
+	- I think this unites any 2D geometries on the workplane to make it easier to apply 3d operations (like sweep) on the 2d geometries?
 

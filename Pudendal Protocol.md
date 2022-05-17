@@ -164,7 +164,7 @@ _/Subjects/YourNewSubject/Segmentations_
 
 **Critical: **The order of contacts in the exported file is important and has to be contact0, contact1, contact2, and contact3.
 
-23.  Navigate to the Python folder and run _Read_XML.py _after changing the Subject variable to the current subject in the script. 
+23.  Navigate to the Python folder and run _[[Read_XML.py]] _ after changing the Subject variable to the current subject in the script. 
 
 This code reads the xml file and extracts the required information to construct the electrode. 
 
@@ -184,7 +184,7 @@ This code reads the xml file and extracts the required information to construct 
 
 'Something is wrong. You may want to flip the order of points in the python code.'
 
-In that case, go to _Read_XML.py _and comment/uncomment the line that says 
+In that case, go to _Read_XML.py _ and comment/uncomment the line that says 
 
 Points=np.flip(Points,axis=0)
 
@@ -240,7 +240,7 @@ _/Subjects/YourNewSubject/Segmentations_
 38. Open COMSOL with MATLAB.
 
 
-39. Navigate to MATLAB folder and run _Geometry.m _after changing the Subject to the current subject. This code creates the geometry for the model. 
+39. Navigate to MATLAB folder and run _[[Geometry.m]] _ after changing the Subject to the current subject. This code creates the geometry for the model. 
 
 **Note: **The result is saved at _/Subjects/YourNewSubject/FEM/Geometry.mph _and you should open it to make sure it looks good ([Figure 12](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.t8s4cjti5ycz))
 
@@ -251,17 +251,17 @@ _/Subjects/YourNewSubject/Segmentations_
 
 **Troubleshooting: **You may have to smooth the body more if COMSOL fails to create the geometry. Also check if electrode & nerve geometry overlap.
 
-40. Navigate to MATLAB folder and run _Mesh.m _after changing the Subject to the current subject. This code creates the mesh and the files necessary for material assignment. The code refines the mesh multiple times and the final mesh and its corresponding conductivity will be used. 
+40. Navigate to MATLAB folder and run _[[Mesh.m]] _ after changing the Subject to the current subject. This code creates the mesh and the files necessary for material assignment. The code refines the mesh multiple times and the final mesh and its corresponding conductivity will be used. 
 
-**Note: **The meshes are saved at _/Subjects/YourNewSubject/FEM/Meshes_
+**Note: ** The meshes are saved at _/Subjects/YourNewSubject/FEM/Meshes_
 
-**Note: **The conductivities are saved at** **_/Subjects/YourNewSubject/FEM/Sigmas_
+**Note: ** The conductivities are saved at** **_/Subjects/YourNewSubject/FEM/Sigmas_
 
-**Note: **There are visualization files for conductivity values located in_/Subjects/YourNewSubject/FEM/Sigmas _with .vtu extension that can be opened by Paraview.
+**Note: ** There are visualization files for conductivity values located in_/Subjects/YourNewSubject/FEM/Sigmas _with .vtu extension that can be opened by Paraview.
 
-**Note: **The meshing and material assignment is a time consuming process and can take about an hour. 
+**Note: ** The meshing and material assignment is a time consuming process and can take about an hour. 
 
-**Troubleshooting: **You may have to change mesh resolution for the nerve (or other parts) if COMSOL fails to create the mesh.** **However, if the initial mesh is generated without any issues, the refinement process will carry out with no problem. Check _Mesh.m _to find where you can modify the mesh resolution.
+**Troubleshooting: ** You may have to change mesh resolution for the nerve (or other parts) if COMSOL fails to create the mesh.** **However, if the initial mesh is generated without any issues, the refinement process will carry out with no problem. Check _Mesh.m _to find where you can modify the mesh resolution.
 
 
 ## FEM solution
