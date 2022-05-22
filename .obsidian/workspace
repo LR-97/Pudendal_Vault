@@ -7,23 +7,13 @@
         "id": "f7e6fa561707a033",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
-        },
-        "group": "c439198ee3cffba4"
-      },
-      {
-        "id": "155bd29a05af5e45",
-        "type": "leaf",
-        "state": {
           "type": "markdown",
           "state": {
             "file": "FAQ/Connecting this repo to you local obsidian.md",
-            "mode": "source",
+            "mode": "preview",
             "source": true
           }
-        },
-        "group": "c439198ee3cffba4"
+        }
       }
     ],
     "direction": "vertical"
@@ -79,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "FAQ/Connecting this repo to you local obsidian.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -100,13 +91,13 @@
   "lastOpenFiles": [
     "FAQ/Connecting this repo to you local obsidian.md",
     "FAQ/Managing Branches.md",
+    "Code/Python/Read_XML.py.md",
+    "Code/Template.md",
+    "Code/Matlab/Electrode.m.md",
     "README.md",
     "Code/Python/rec_dict.py.md",
     "Code/Python/CommandThresholdCalculation.py.md",
     "Code/Python/Cell_rdg.py.md",
-    "Code/Python/Read_XML.py.md",
-    "Pudendal Protocol.md",
-    "Code/Template.md",
-    "Code/Matlab/Mesh.m.md"
+    "Pudendal Protocol.md"
   ]
 }

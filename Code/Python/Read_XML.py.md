@@ -2,7 +2,7 @@
 ## What is this script for?
 The main function of this script is to read parse XML files for point coordinates and save these in a '.txt' file. Specifically, this script takes two XML files, 'Centerline.xml' and 'Contacts.xml', which describe the centerline of the electrode lead and the electrode contact centroids, respectively. It then parses the files for x, y, z coordinates which it saves in the files 'ExtractCenterline.txt' and 'ExtractContacts.txt' files. These text files are then used during the [[Pudendal Protocol#Electrode reconstruction|electrode reconstruction]].
 
-*Note:* The variable *Path0*, which stores the path to the 'Subjects' folder is hard coded, and must be changed if the script is gonna be ran on another computer.
+*Note:* The variable *Path0*, which stores the path to the 'Subjects' folder is hard coded, and must be changed if the script is gonna be ran on another computer. Nevermind.
 
 ## Dependencies
 - None
