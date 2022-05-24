@@ -196,8 +196,6 @@ This issue arises because of what I have explained in the critical part of step 
 
 ## 3D parts
 
- 
-
 26. Open the co-registered MRI project in Mimics.
 
 
@@ -272,16 +270,16 @@ _/Subjects/YourNewSubject/Segmentations_
 41.  Open COMSOL with MATLAB.
 
 
-42. Navigate to MATLAB folder and run _PreSolution.m _after changing the Subject to the current subject. This code creates the model that will be run to generate the voltage distributions.
+42. Navigate to MATLAB folder and run  _[[PreSolution.m]] _ after changing the Subject to the current subject. This code creates the model that will be run to generate the voltage distributions.
 
 
-43. Navigate to MATLAB folder and run _Run.m _after changing the Subject to the current subject. This code runs the model for all the monopolar and bipolar configurations and saves the files in  
+43. Navigate to MATLAB folder and run  _[[Run.m]] _ after changing the Subject to the current subject. This code runs the model for all the monopolar and bipolar configurations and saves the files in  
 
 _/Subjects/YourNewSubject/FEM/Solutions_
 
 **Note: **There are visualization files for voltages located in _/Subjects/YourNewSubject/FEM/Solutions _with .vtu extension that can be opened by Paraview.
 
-**Note: **This is a time consuming process and solving each electrode configuration can take 15-30 minutes. You may remove some of the configuration that you do not need by modifying _Run.m _code.
+**Note: **This is a time consuming process and solving each electrode configuration can take 15-30 minutes. You may remove some of the configuration that you do not need by modifying  _Run.m _ code.
 
 
 ## Axon Trajectories
@@ -324,7 +322,7 @@ _/Subjects/YourNewSubject/FEM/Solutions_
 
 ###### Figure 16
 
-52. Navigate to the Python folder and open _ExportData.py_ code. Change the subject name to the current subject name and save. Also change the path according to which nerve (left or right) is of interest.
+52. Navigate to the Python folder and open  _[[ExportData.py]]_ code. Change the subject name to the current subject name and save. Also change the path according to which nerve (left or right) is of interest.
 
 
 53. Go to View and open a Python Shell. Then go to Run Script and open _ExportData.py _code that we modified in step 52 ([Figure 17](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.sbxfrugxy5v4)). This python code runs in paraview and creates the center point of the selections we created in the previous steps.
