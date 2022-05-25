@@ -325,14 +325,14 @@ _/Subjects/YourNewSubject/FEM/Solutions_
 52. Navigate to the Python folder and open  _[[ExportData.py]]_ code. Change the subject name to the current subject name and save. Also change the path according to which nerve (left or right) is of interest.
 
 
-53. Go to View and open a Python Shell. Then go to Run Script and open _ExportData.py _code that we modified in step 52 ([Figure 17](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.sbxfrugxy5v4)). This python code runs in paraview and creates the center point of the selections we created in the previous steps.
+53. Go to View and open a Python Shell. Then go to Run Script and open _[[ExportData.py]] _ code that we modified in step 52 ([Figure 17](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.sbxfrugxy5v4)). This python code runs in paraview and creates the center point of the selections we created in the previous steps.
 
 ![](https://lh6.googleusercontent.com/tdOKDSVK-sa5WWvE33t65vUMF_4x8-c49FNwahyxD4mKEju6SOGdaG5_eLUS4H-Yr18PFbb-6IgBe7_1h72_riF6Hz-cQcGA04amR4KjO0yZ9KscM4ZfyfEB6iK6d62cl4nt1rd4)
 
 
 ###### Figure 17
 
-54. Navigate to the Python folder and run _Centerlines.py_ code after changing the subject to the current subject. Also change Path2 and surfaceReader.InputFileName based on whether it is the left or right nerve. This code creates centerlines that connect the center of points we defined in the previous steps. 
+54. Navigate to the Python folder and run _[[Centerlines.py]]_ code after changing the subject to the current subject. Also change Path2 and surfaceReader.InputFileName based on whether it is the left or right nerve. This code creates centerlines that connect the center of points we defined in the previous steps. 
 
 **Critical: **This code requires the [vmtk](http://www.vmtk.org/) package, which is not a standard Python package. I recommend following their installation [guide ](http://www.vmtk.org/download/)and installing the package in a new environment.This package uses an older version of numpy and that is one of the reasons why I recommend installing it in a separate environment.
 

@@ -45,6 +45,12 @@ This is a template that can be copied and pasted to fill out documentation for t
 - Describe the major step in achieving major function two
 - 
 
+## Output (use if the script outputs a file)
+- Describe any outputs and their formatting, for example .txt files
+
+## Tags
+Here, you can add tags to the page to make it easier to track which pages touch on which topics. I am also using the #complete tag to denote which pages are complete.
+
 ## Suggestions for improvement
 - If you spot potential improvements in performance or readability, feel free to list them here. This will be useful if we decide to refactor the code at a later date.
 
