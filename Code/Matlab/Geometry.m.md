@@ -3,7 +3,7 @@
 This is a template that can be copied and pasted to fill out documentation for the various scripts we use in the pudendal project. Under this heading, provide a general description of the purpose of the script and note key knowledge critical to properly using the script.
 
 ## Dependencies
-- [[link to some class or function used in the current script]] from [[link to some other script from which the class or function originates]]
+- 
 
 ## Functionality (use if script is more functional than object oriented)
 ### Create File Paths

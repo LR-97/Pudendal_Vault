@@ -7,8 +7,12 @@
         "id": "f7e6fa561707a033",
         "type": "leaf",
         "state": {
-          "type": "graph",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source",
+            "source": true
+          }
         },
         "group": "555a4a8107d4b329"
       },
@@ -16,12 +20,8 @@
         "id": "41bdb17d5364fcd6",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Code/Template.md",
-            "mode": "source",
-            "source": true
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "555a4a8107d4b329"
       }
@@ -96,17 +96,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "f7e6fa561707a033",
+  "active": "41bdb17d5364fcd6",
   "lastOpenFiles": [
+    "README.md",
+    "Code/Matlab/Geometry.m.md",
+    "link to some other script from which the class or function originates.md",
     "Code/Template.md",
     "Code/Matlab/PreSolution.m.md",
     "FAQ/SetUpInstructions.md",
     "Code/Python/ExportData.py.md",
     "Pudendal Protocol.md",
     "Literature/Untitled.md",
-    "Code/Python/Centerlines.py.md",
-    "Code/Matlab/Run.m.md",
-    "Code/Matlab/Geometry.m.md",
-    "Code/Matlab/Electrode.m.md"
+    "Code/Python/Centerlines.py.md"
   ]
 }

@@ -1,6 +1,7 @@
 # Obsidian Vault for the Pudendal Project
 This is an obsidian vault to track components of the pudendal stimulation modeling project. Currently it is setup to serve as documentation for the various scripts used in the modeling pipeline. In the future it could be expanded to serve additional purposes, such as a literature review workspace.  
 ## Overview
+See [[SetUpInstructions]] to set up vault in your local machine.
 ## Organization
 The modeling pipeline workflow is described in [[Pudendal Protocol]].
 
