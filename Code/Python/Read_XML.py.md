@@ -25,6 +25,11 @@ The main function of this script is to read parse XML files for point coordinate
 	- Append the list of coordinates to a list-of-lists called 'Points'
 -Save the 'Points' list as a text file using the *[np.savetxt()](https://numpy.org/doc/stable/reference/generated/numpy.savetxt.html)* function
 
+## Outputs
+
+## Tags
+#incomplete 
+
 ## Suggestions for improvement
 - Consider encapsulating code in functions and creating a _ _ Main _ _() method
 - Check if it is possible to export as .txt or .csv from 3matic, so that this script is not needed.

@@ -14,7 +14,9 @@ This is a template that can be copied and pasted to fill out documentation for t
 
 ### Major Function 2
 - Describe the major step in achieving major function two
-- 
+
+## Tags
+#incomplete 
 
 ## Suggestions for improvement
 - If you spot potential improvements in performance or readability, feel free to list them here. This will be useful if we decide to refactor the code at a later date.

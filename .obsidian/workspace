@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Code/Python/Centerlines.py.md",
-            "mode": "preview",
+            "file": "Code/Matlab/Electrode.m.md",
+            "mode": "source",
             "source": true
           }
         },
@@ -20,12 +20,8 @@
         "id": "6367433cb96176b5",
         "type": "leaf",
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Code/Python/Centerlines.py.md",
-            "mode": "source",
-            "source": true
-          }
+          "type": "graph",
+          "state": {}
         },
         "group": "a9e4d0c74edb0964"
       }
@@ -83,7 +79,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Code/Python/Centerlines.py.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,15 +98,15 @@
   },
   "active": "6367433cb96176b5",
   "lastOpenFiles": [
-    "Code/Python/Centerlines.py.md",
-    "Code/Template.md",
-    "Pudendal Protocol.md",
-    "README.md",
+    "Code/Matlab/Electrode.m.md",
     "Code/Matlab/Geometry.m.md",
-    "link to some other script from which the class or function originates.md",
+    "Code/Matlab/Mesh.m.md",
+    "Code/Matlab/Run.m.md",
     "Code/Matlab/PreSolution.m.md",
-    "FAQ/SetUpInstructions.md",
+    "Code/Python/Cell_rdg.py.md",
+    "Code/Python/CommandThresholdCalculation.py.md",
     "Code/Python/ExportData.py.md",
-    "Literature/Untitled.md"
+    "Code/Python/Read_XML.py.md",
+    "Code/Python/rec_dict.py.md"
   ]
 }

@@ -40,7 +40,9 @@ This matlab script creates a comsol model of a participant's electrode. It requi
 - Calculate the numerical gradient of the centerline x, y, z coordinate vectors using [gradient](https://www.mathworks.com/help/matlab/ref/gradient.html?s_tid=doc_ta)
 - Use dx, dy, dz to compute the derivative, *ds* of a parametric version of the centerline
 - Sum the elements of ds to calculate the arc length of the centerline
-- 
+
+## Tags
+#incomplete 
 
 ## Suggestions for improvement
 - Change the subj_ID variable to be a prompt, in order to prevent the user forgetting update the subj_ID string

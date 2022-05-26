@@ -100,6 +100,10 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 
 ## Main Code Section
 
+
+## Tags
+#incomplete 
+
 ## Suggestions for improvement
 - Instead of saving the upper and lower bound to a .txt file, save only the midpoint value.
 - Modifiy [[CommandThresholdCalculation.py#Model| Model(traj)]] to also take as a parameter the desired fiber diameter

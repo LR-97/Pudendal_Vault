@@ -84,6 +84,7 @@ Use Inertia Axis Algin from Algin tab. Select the MRI pelvis for the Fixed Part.
 10. From Mimics, export the subjects MRI as dicom files with the pudendal nerve mask included
 	*TODO: Describe how to *
 1. Open simvascular and create a project
+2. #incomplete 
 
 ## Electrode reconstruction
 10. Use 3-matic to create a new project and save it in:

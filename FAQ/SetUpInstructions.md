@@ -32,6 +32,7 @@
 
 ## MAC OS:
 - Create a [Github](https://github.com) account, if you don't already have one.
+#incomplete 
 
 ## See Also:
 - [[Managing Branches]]

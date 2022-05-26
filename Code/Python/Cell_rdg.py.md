@@ -148,5 +148,8 @@ The Cell_rdg script contains the 'Cell' class and the 'MRG' class (which inherit
 - **Summary**:
 - **Step-by-step**:
 
+## Tags
+#incomplete 
+
 ## Code suggestions
 - get rid of variable setter and getter in Cell class, instead implement with @property decorator
