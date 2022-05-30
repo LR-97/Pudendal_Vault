@@ -6,7 +6,6 @@
       {
         "id": "f7e6fa561707a033",
         "type": "leaf",
-        "dimension": 17.40644038294169,
         "state": {
           "type": "markdown",
           "state": {
@@ -20,7 +19,6 @@
       {
         "id": "6367433cb96176b5",
         "type": "leaf",
-        "dimension": 82.5935596170583,
         "state": {
           "type": "markdown",
           "state": {
@@ -106,14 +104,14 @@
   "active": "6367433cb96176b5",
   "lastOpenFiles": [
     "Test.md",
-    "Pudendal Protocol.md",
-    "FAQ/Managing Branches.md",
-    "Code/Python/Cell_rdg.py.md",
     "Code/Python/CommandThresholdCalculation.py.md",
+    "Code/Python/Cell_rdg.py.md",
     "Code/Matlab/Electrode.m.md",
     "Code/Matlab/Geometry.m.md",
     "Code/Matlab/Mesh.m.md",
     "Code/Matlab/Run.m.md",
-    "Code/Matlab/PreSolution.m.md"
+    "Code/Matlab/PreSolution.m.md",
+    "Code/Python/ExportData.py.md",
+    "Code/Python/Read_XML.py.md"
   ]
 }
