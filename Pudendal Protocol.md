@@ -7,11 +7,11 @@
 
 1. Duplicate the “New Subject” folder in the “Subjects” folder and change its name to the name of the new subject (e.g. 1010).
 
-**Critical: **Change “subject = _YourNewSubject” _ _before_ running any of the codes. This is the only line in all the codes that you need to change unless you are prompted by the code to correct some potential issues.  
+**Critical: ** Change “subject = _YourNewSubject” _  _before_ running any of the codes.   
 
 **Note: **The codes look for specific files in specific folders. The existence of all these files and folders and checked in the beginning of most codes and you will receive error messages if the necessary files are not where they are expected to be. Hence, it is important to keep the organization of files and folders as intended.
 
-**Note: **The “New Subject” folder includes all the empty subfolders that are necessary to run simulation and do the analysis. These subfolders will be populated with necessary files along the process.
+**Note: ** The “New Subject” folder includes all the empty subfolders that are necessary to run simulation and do the analysis. These subfolders will be populated with necessary files along the process.
 
 
 ## Segmentation
@@ -333,9 +333,9 @@ _/Subjects/YourNewSubject/FEM/Solutions_
 
 ###### Figure 17
 
-54. Navigate to the Python folder and run _[[Centerlines.py]]_ code after changing the subject to the current subject. Also change Path2 and surfaceReader.InputFileName based on whether it is the left or right nerve. This code creates centerlines that connect the center of points we defined in the previous steps. 
+54. Navigate to the Python folder and run _[[Centerlines.py]]_ code after changing the subject to the current subject, and the desired nerve side. This code creates centerlines that connect the center of points we defined in the previous steps. 
 
-**Critical: **This code requires the [vmtk](http://www.vmtk.org/) package, which is not a standard Python package. I recommend following their installation [guide ](http://www.vmtk.org/download/)and installing the package in a new environment.This package uses an older version of numpy and that is one of the reasons why I recommend installing it in a separate environment.
+**Critical: ** This code requires the [vmtk](http://www.vmtk.org/) package, which is not a standard Python package. I recommend following their installation [guide ](http://www.vmtk.org/download/)and installing the package in a new environment.This package uses an older version of numpy and that is one of the reasons why I recommend installing it in a separate environment.
 
 **Note: **The results of running this code is saved at:
 
@@ -352,10 +352,10 @@ Depending on which nerve (left or right) you are working with. The centerline co
 
 ###### Figure 18
 
-55. Navigate to the Python folder and open _GuideCreator.py_ and change the subject to the current subject. There are other parameters that you need to change in this code before running it. 
+55. Navigate to the Python folder and open  _[[GuideCreator.py]]_ and change the subject to the current subject. There are other parameters that you need to change in this code before running it. 
 56. You have to decide where to put the guides in the main branch for the perineal, rectal and genital axons. The guides are points that the trajectories have to pass through them. Technically, you can have only to guide points (seed and targets). However, if we want to force trajectories to populate a specific side part of the nerve (e.g. lateral), then having guides is necessary. 
 
-There are several ways of doing this and you can learn more about them by looking at the _FindGuides _function. 
+There are several ways of doing this and you can learn more about them by looking at the _[[GuideCreator.py|FindGuides]]_ function. 
 
 Right now, we are assuming that the perineal axons are populated in the middle of the nerve [(Figure 19)](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.j60j4yg8yb3). So, you don’t need to pass any extra argument to _FindGuides _function.
 
