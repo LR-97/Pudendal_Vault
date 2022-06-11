@@ -14,7 +14,7 @@
 
 ## Functionality 
 ### Major Function 1
-- Obtain the points that define the face boundaries, face centers, and normals of the nerve .stl file using the [[STLRead.py#read_stl|read_stl]] function from STLRead.py
+- Obtain the points that define the face boundaries, face centers, and normals of the nerve .stl file using the [[STLRead.py#read_stl|read_stl]] function from [[STLRead.py]]
 
 ### Major Function 2
 - Describe the major step in achieving major function two
@@ -24,10 +24,10 @@
 - Describe any outputs and their formatting, for example .txt files
 
 ## Tags
-#incomplete 
+#incomplete #axonTrajectories 
 
 ## Suggestions for improvement
-- 
+- The time module was only used to benchmark performance when script was being written. Relevant code could be taken out. It wouldn't speed up computation, but would clean up the code slightly
 
 ## Code I don't understand
 - 
