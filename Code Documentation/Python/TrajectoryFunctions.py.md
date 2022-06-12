@@ -29,15 +29,26 @@ This is a template that can be copied and pasted to fill out documentation for t
 
 ### SmoothTrajectories
 -  **Parameters**
-	- *Path:* Numpy array containing points describing a trajectory
+	- *PointsArray:* Numpy array containing points describing a trajectory
 - **Description**
 	- Description of function's purpose
 
 - **Step-by-Step**
-	- List the steps the method is taking to achieve its goal in plain english
-	- try to provide the big picture as if explaining to someone who might be unfamiliar with the programming language
-	- only state packages being used if they are niche (such as NEURON) but not if they are common (for example, NumPy). 
-	- Additionally, link to relevant documentation when possible. For example: [NEURON model file](https://neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/mechanisms/nmodl.html)  
+	- Define an array, *PP*, with 3 number that dictate how much the trajectory will be upsampled/smoothed in each of 3 rounds of upsampling/smoothing.
+	- Make a copy of *PointsArray* named *Points*
+	- Set a variable *N* equal to the first value in *PP*
+	- Define the *t* array as a linear interpolation from 0 to 1 in 3*N points
+	- In segments of N points, smooth the trajectory using the [[Bezier.py#Bezier]] function. 
+	- Append the smooth segments to an array, *Q*
+	-  After smoothing all segments, set *Points* equal to *Q*
+	- Set *N* equal to the 2nd value in *PP*
+	- Recalculate *t* using the new *N* value
+	- Repeat the smoothing steps (2nd time)
+	- After smoothing all segments, again, set *Points* equal to *Q*
+	- Set *N* equal to the 3rd value in *PP*
+	- Recalculate *t* using the new *N* value
+	- Repeat the smoothing steps (3rd time)
+	- Return *Q*
 
 ### FindTrajectoriesMulti
 -  **Parameters**
@@ -69,6 +80,7 @@ This is a template that can be copied and pasted to fill out documentation for t
 ## Suggestions for improvement
 - ~~The variable name 'Path' for the input variable to smooth trajectory doesn't make sense in this context. It suggests that it is a string pointing to some, but what gets passed is actually a variable of type numpy array. It should be renamed.~~ Renamed to PointsArray
 - Code for [[TrajectoryFunctions.py#SmoothTrajectories]] is very repetitive. Placing the repeated code in a nested function would increase readability very much.
+- The [[TrajectoryFunctions.py#SmoothTrajectories]] function has a for-loop that goes to a break block by design, the logic could probably be cleaned up to increase readability
 
 ## Code I don't understand
 - ```Here, copy paste any code portions that you are unsure what it does``` 
