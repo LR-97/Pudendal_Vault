@@ -3,7 +3,7 @@ This is an obsidian vault to track components of the pudendal stimulation modeli
 ## Overview
 See [[SetUpInstructions]] to set up vault in your local machine.
 ## Organization
-The modeling pipeline workflow is described in [[Pudendal Protocol]].
+The modeling pipeline workflow is described in [[PudendalProtocol]].
 
 Documentation for scripts is stored in the Code folder and segregated according to the language the script is written in. 
 

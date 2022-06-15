@@ -1,6 +1,6 @@
 # Electrode.m
 ## What is this script for?
-This matlab script creates a comsol model of a participant's electrode. It requires two .xml files describing the electrode's centerline and the centroids of the electrode contacts. For more details, see [[Pudendal Protocol#Electrode reconstruction|here]].
+This matlab script creates a comsol model of a participant's electrode. It requires two .xml files describing the electrode's centerline and the centroids of the electrode contacts. For more details, see [[PudendalProtocol#Electrode reconstruction|here]].
 
 ## Dependencies
 - [Comsol with Matlab](https://doc.comsol.com/5.4/doc/com.comsol.help.llmatlab/LiveLinkForMATLABUsersGuide.pdf)

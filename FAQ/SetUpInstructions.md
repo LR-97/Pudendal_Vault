@@ -35,4 +35,4 @@
 #incomplete 
 
 ## See Also:
-- [[Managing Branches]]
+- [[ManagingBranches]]

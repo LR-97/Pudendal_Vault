@@ -1,6 +1,6 @@
 # Centerlines.py
 ## What is this script for?
-This script creates centerlines for the different portions of the pudendal nerve (roots-through-trunk centerlines, and branches centerlines). It utilizes the .txt files created by [[ExportData]] and derived from  [[Pudendal Protocol#Axon Trajectories| previously made paraview selections]]. It also requires the VMTK package, see the pudendal protocol for more details. The script exports .vtk and .txt files describing the centerlines.
+This script creates centerlines for the different portions of the pudendal nerve (roots-through-trunk centerlines, and branches centerlines). It utilizes the .txt files created by [[ExportData]] and derived from  [[PudendalProtocol#Axon Trajectories| previously made paraview selections]]. It also requires the VMTK package, see the pudendal protocol for more details. The script exports .vtk and .txt files describing the centerlines.
 
 *Note:* Remember to change the Subject variable to the appropriate participant ID, and the 'Side' variable to the correct side based on electrode position
 
@@ -12,7 +12,7 @@ This script creates centerlines for the different portions of the pudendal nerve
 
 ## Functionality 
 ### Compute centroids of selections (lines 6-29)
-- **For each of the [[Pudendal Protocol#Axon Trajectories| previously made paraview selections]] ('G0', 'G1', 'P0', 'P1', 'R0', 'R1', 'M0', 'S2', 'S3', and 'S4'):**
+- **For each of the [[PudendalProtocol#Axon Trajectories| previously made paraview selections]] ('G0', 'G1', 'P0', 'P1', 'R0', 'R1', 'M0', 'S2', 'S3', and 'S4'):**
 	- Load the respective selection's text file, and parse for the coordinates of the points in the selection
 	- Average the x, y, and z coordinates to compute the centroid of the selection 
 	- Format the centroid coordinates as a 2D numpy float array
