@@ -1,6 +1,6 @@
 # Centerlines.py
 ## What is this script for?
-This script creates centerlines for the different portions of the pudendal nerve (roots-through-trunk centerlines, and branches centerlines). It utilizes the .txt files created by [[ExportData.py]] and derived from  [[Pudendal Protocol#Axon Trajectories| previously made paraview selections]]. It also requires the VMTK package, see the pudendal protocol for more details. The script exports .vtk and .txt files describing the centerlines.
+This script creates centerlines for the different portions of the pudendal nerve (roots-through-trunk centerlines, and branches centerlines). It utilizes the .txt files created by [[ExportData]] and derived from  [[Pudendal Protocol#Axon Trajectories| previously made paraview selections]]. It also requires the VMTK package, see the pudendal protocol for more details. The script exports .vtk and .txt files describing the centerlines.
 
 *Note:* Remember to change the Subject variable to the appropriate participant ID, and the 'Side' variable to the correct side based on electrode position
 
@@ -20,7 +20,7 @@ This script creates centerlines for the different portions of the pudendal nerve
 - Define the 'Paths' python list with the names ('G0G1', 'R0R1', 'P0P1', 'M0S2', 'M0S3', 'M0S4') of the centerlines we need to create from the paraview selections.
 
 ### Instantiate a VMTK Surface Reader (lines 33- 35)
-- Create an instance of [[Centerlines.py#Dependencies|vmtkSurfaceReader]]
+- Create an instance of [[Centerlines#Dependencies|vmtkSurfaceReader]]
 - Set the SurfaceReader's InputFileName property to be the filepath of the pudendal nerve .stl file 
 - Call the SurfaceReader's Execute() method
 
@@ -28,14 +28,14 @@ This script creates centerlines for the different portions of the pudendal nerve
 - **For each path in the 'Paths' list:**
 	-  Split the path from 'Paths' into a 'source' and 'target' string (ex. source = G0 and target = G1)
 	- **Compute the centerline (38-47): **
-		- Create an instance of a [[Centerlines.py#Dependencies|vmtkCenterlines]] object
+		- Create an instance of a [[Centerlines#Dependencies|vmtkCenterlines]] object
 		- Assign the the Centerlines' surface to the be the same as the SurfaceReader's 'surface' attribute
 		- Indicate that the centerline's seed points will come from a points list by setting the centerlines object's 'SeedSelectorName' property to be 'pointlist'
 		- Set the centerlines object's 'SourcePoints' property to be the centroid of the current source selection by accessing the 'Anchors' dictionary
 		- Set the centerlines object's 'TargetPoints' property to be the centroid of the current target selection by accessing the 'Anchors' dictionary
 		- Call the centerlines object's 'Execute()' method
 	- **Save the centerline as a .vtk file (48-51):**
-		- Create an instance of a [[Centerlines.py#Dependencies|vmtkSurfaceWriter]] object
+		- Create an instance of a [[Centerlines#Dependencies|vmtkSurfaceWriter]] object
 		- Set the surface writer's 'OutputFileName' property with the appropriate path
 		- Set the surface writer's 'Surface' property to be the centerlines object's 'Centerlines' property
 		- Call the surface writer's 'Execute()' method to create the output vtk file
@@ -43,7 +43,7 @@ This script creates centerlines for the different portions of the pudendal nerve
 		- Instantiate another surface reader to read the centerline vmtk path we just created
 		- Set the surface reader's 'InputFileName' property to be the path of the vtk file just created
 		- Call the new surface reader's 'Execute()' method
-		- Create an instance of a [[Centerlines.py#Dependencies|vmtkCenterlinesToNumpy]] object
+		- Create an instance of a [[Centerlines#Dependencies|vmtkCenterlinesToNumpy]] object
 		- Set the 'Centerlines' attribute of the CenterlinesToNumpy object to be equal to the 'Surface' attribute of the new surface reader
 		- Call the CenterlinesToNumpy object's 'Execute()' method
 		- Fetch the numpy-formatted centerline data (stored as a python dictionary) from the CenterlinesToNumpy object by calling the 'ArrayDict' attribute

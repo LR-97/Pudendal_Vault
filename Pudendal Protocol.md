@@ -168,14 +168,14 @@ _/Subjects/YourNewSubject/Segmentations_
 
 **Critical: **The order of contacts in the exported file is important and has to be contact0, contact1, contact2, and contact3.
 
-23.  Navigate to the Python folder and run _[[Read_XML.py]] _ after changing the Subject variable to the current subject in the script. 
+23.  Navigate to the Python folder and run _[[Read_XML]] _ after changing the Subject variable to the current subject in the script. 
 
 This code reads the xml file and extracts the required information to construct the electrode. 
 
 24. Open COMSOL with MATLAB.
 
 
-25. Navigate to the MATLAB folder and run  _[[Electrode.m]] _ after changing the Subject variable in the script to the current subject. This code creates the electrode geometry and the contacts. 
+25. Navigate to the MATLAB folder and run  _[[Electrode]] _ after changing the Subject variable in the script to the current subject. This code creates the electrode geometry and the contacts. 
 
 **Note: **The result is saved at  _/Subjects/YourNewSubject/FEM/Electrode.mph _ and you should open it to make sure it looks good ([Figure 11](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.bqaxpbg87txc))
 
@@ -242,7 +242,7 @@ _/Subjects/YourNewSubject/Segmentations_
 38. Open COMSOL with MATLAB.
 
 
-39. Navigate to MATLAB folder and run _[[Geometry.m]] _ after changing the Subject to the current subject. This code creates the geometry for the model. 
+39. Navigate to MATLAB folder and run _[[Geometry]] _ after changing the Subject to the current subject. This code creates the geometry for the model. 
 
 **Note: **The result is saved at _/Subjects/YourNewSubject/FEM/Geometry.mph _and you should open it to make sure it looks good ([Figure 12](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.t8s4cjti5ycz))
 
@@ -253,7 +253,7 @@ _/Subjects/YourNewSubject/Segmentations_
 
 **Troubleshooting: **You may have to smooth the body more if COMSOL fails to create the geometry. Also check if electrode & nerve geometry overlap.
 
-40. Navigate to MATLAB folder and run _[[Mesh.m]] _ after changing the Subject to the current subject. This code creates the mesh and the files necessary for material assignment. The code refines the mesh multiple times and the final mesh and its corresponding conductivity will be used. 
+40. Navigate to MATLAB folder and run _[[Mesh]] _ after changing the Subject to the current subject. This code creates the mesh and the files necessary for material assignment. The code refines the mesh multiple times and the final mesh and its corresponding conductivity will be used. 
 
 **Note: ** The meshes are saved at _/Subjects/YourNewSubject/FEM/Meshes_
 
@@ -271,10 +271,10 @@ _/Subjects/YourNewSubject/Segmentations_
 41.  Open COMSOL with MATLAB.
 
 
-42. Navigate to MATLAB folder and run  _[[PreSolution.m]] _ after changing the Subject to the current subject. This code creates the model that will be run to generate the voltage distributions.
+42. Navigate to MATLAB folder and run  _[[PreSolution]] _ after changing the Subject to the current subject. This code creates the model that will be run to generate the voltage distributions.
 
 
-43. Navigate to MATLAB folder and run  _[[Run.m]] _ after changing the Subject to the current subject. This code runs the model for all the monopolar and bipolar configurations and saves the files in  
+43. Navigate to MATLAB folder and run  _[[Run]] _ after changing the Subject to the current subject. This code runs the model for all the monopolar and bipolar configurations and saves the files in  
 
 _/Subjects/YourNewSubject/FEM/Solutions_
 
@@ -323,17 +323,17 @@ _/Subjects/YourNewSubject/FEM/Solutions_
 
 ###### Figure 16
 
-52. Navigate to the Python folder and open  _[[ExportData.py]]_ code. Change the subject name to the current subject name and save. Also change the path according to which nerve (left or right) is of interest.
+52. Navigate to the Python folder and open  _[[ExportData]]_ code. Change the subject name to the current subject name and save. Also change the path according to which nerve (left or right) is of interest.
 
 
-53. Go to View and open a Python Shell. Then go to Run Script and open _[[ExportData.py]] _ code that we modified in step 52 ([Figure 17](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.sbxfrugxy5v4)). This python code runs in paraview and creates the center point of the selections we created in the previous steps.
+53. Go to View and open a Python Shell. Then go to Run Script and open _[[ExportData]] _ code that we modified in step 52 ([Figure 17](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.sbxfrugxy5v4)). This python code runs in paraview and creates the center point of the selections we created in the previous steps.
 
 ![](https://lh6.googleusercontent.com/tdOKDSVK-sa5WWvE33t65vUMF_4x8-c49FNwahyxD4mKEju6SOGdaG5_eLUS4H-Yr18PFbb-6IgBe7_1h72_riF6Hz-cQcGA04amR4KjO0yZ9KscM4ZfyfEB6iK6d62cl4nt1rd4)
 
 
 ###### Figure 17
 
-54. Navigate to the Python folder and run _[[Centerlines.py]]_ code after changing the subject to the current subject, and the desired nerve side. This code creates centerlines that connect the center of points we defined in the previous steps. 
+54. Navigate to the Python folder and run _[[Centerlines]]_ code after changing the subject to the current subject, and the desired nerve side. This code creates centerlines that connect the center of points we defined in the previous steps. 
 
 **Critical: ** This code requires the [vmtk](http://www.vmtk.org/) package, which is not a standard Python package. I recommend following their installation [guide ](http://www.vmtk.org/download/)and installing the package in a new environment.This package uses an older version of numpy and that is one of the reasons why I recommend installing it in a separate environment.
 
@@ -352,10 +352,10 @@ Depending on which nerve (left or right) you are working with. The centerline co
 
 ###### Figure 18
 
-55. Navigate to the Python folder and open  _[[GuideCreator.py]]_ and change the subject to the current subject. There are other parameters that you need to change in this code before running it. 
+55. Navigate to the Python folder and open  _[[GuideCreator]]_ and change the subject to the current subject. There are other parameters that you need to change in this code before running it. 
 56. You have to decide where to put the guides in the main branch for the perineal, rectal and genital axons. The guides are points that the trajectories have to pass through them. Technically, you can have only to guide points (seed and targets). However, if we want to force trajectories to populate a specific side part of the nerve (e.g. lateral), then having guides is necessary. 
 
-There are several ways of doing this and you can learn more about them by looking at the _[[GuideCreator.py|FindGuides]]_ function. 
+There are several ways of doing this and you can learn more about them by looking at the _[[GuideCreator|FindGuides]]_ function. 
 
 Right now, we are assuming that the perineal axons are populated in the middle of the nerve [(Figure 19)](https://docs.google.com/document/d/1dW4wiqABN6PR1X6uNr-PSv6VEQMVTfmk5EJmJhHy1Fg/edit##heading=h.j60j4yg8yb3). So, you don’t need to pass any extra argument to _FindGuides _function.
 

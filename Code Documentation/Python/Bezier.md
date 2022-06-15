@@ -23,7 +23,7 @@ This script essentially upsamples a given trajectory, described as a list of 3D 
 		- **For each Bernstein Basis Polynomial for a Bernstein Polynomial of degree n:**
 			- *Note: the degree of the polynomial is set by the number of control points. A polynomial of degree n has n+1 basis polynomials*
 			- Sum the current polynomial basis (the jth polynomial basis) weighted by jth control point to the approximation at evaluation point k
-				- The Bernstein polynomial basis is computed using the [[Bezier.py#Bernstein|Bernstein function]].
+				- The Bernstein polynomial basis is computed using the [[Bezier#Bernstein|Bernstein function]].
 	- Return *Q*, the Bezier curve approximation of the trajectory *P*
 
 ### Bernstein
