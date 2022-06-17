@@ -13,21 +13,7 @@
             "mode": "source",
             "source": true
           }
-        },
-        "group": "9d136a916926b8cb"
-      },
-      {
-        "id": "09faf1708e4db71f",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Test.md",
-            "mode": "preview",
-            "source": true
-          }
-        },
-        "group": "9d136a916926b8cb"
+        }
       }
     ],
     "direction": "vertical"
@@ -104,14 +90,14 @@
   "active": "f7e6fa561707a033",
   "lastOpenFiles": [
     "Test.md",
+    "CodeDocumentation/Python/GuideCreator.md",
+    "README.md",
     "CodeDocumentation/Python/TrajectoryFunctions.md",
     "CodeDocumentation/Python/STLRead.md",
     "CodeDocumentation/Python/rec_dict.md",
     "CodeDocumentation/Python/Read_XML.md",
     "CodeDocumentation/Python/InOutTest.md",
-    "CodeDocumentation/Python/GuideCreator.md",
     "CodeDocumentation/Python/ExportData.md",
-    "CodeDocumentation/Python/CommandThresholdCalculation.md",
-    "CodeDocumentation/Python/Centerlines.md"
+    "CodeDocumentation/Python/CommandThresholdCalculation.md"
   ]
 }
