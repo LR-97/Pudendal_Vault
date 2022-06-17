@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Test.md",
+            "file": "conflict-files-obsidian-git.md",
             "mode": "source",
             "source": true
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test.md",
+                "file": "conflict-files-obsidian-git.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "f7e6fa561707a033",
   "lastOpenFiles": [
+    "conflict-files-obsidian-git.md",
     "Test.md",
     "CodeDocumentation/Python/GuideCreator.md",
     "README.md",
@@ -97,7 +98,6 @@
     "CodeDocumentation/Python/rec_dict.md",
     "CodeDocumentation/Python/Read_XML.md",
     "CodeDocumentation/Python/InOutTest.md",
-    "CodeDocumentation/Python/ExportData.md",
-    "CodeDocumentation/Python/CommandThresholdCalculation.md"
+    "CodeDocumentation/Python/ExportData.md"
   ]
 }
