@@ -9,19 +9,10 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "FAQ/SetUpInstructions.md",
-            "mode": "preview",
-            "backlinks": false,
-            "source": false
+            "file": "test_amolak.md",
+            "mode": "source",
+            "source": true
           }
-        }
-      },
-      {
-        "id": "6301fbd70c0ee49a",
-        "type": "leaf",
-        "state": {
-          "type": "empty",
-          "state": {}
         }
       }
     ],
@@ -62,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 231
+    "width": 166.5036334991455
   },
   "right": {
     "id": "43d318b10e67d919",
@@ -78,6 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "test_amolak.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "369a38a22ed16183",
+  "active": "f7e6fa561707a033",
   "lastOpenFiles": [
-    "Code/Python/Centerlines.py.md",
-    "FAQ/SetUpInstructions.md",
-    "FAQ/Managing Branches.md",
-    "Code/Python/Cell_rdg.py.md",
-    "Code/Template.md",
-    "Code/Python/ExportData.py.md",
-    "Code/Python/rec_dict.py.md",
-    "Code/Python/Read_XML.py.md",
-    "Code/Python/CommandThresholdCalculation.py.md",
-    "Pudendal Protocol.md"
+    "test_amolak.md",
+    "README.md",
+    "PudendalProtocol.md",
+    "conflict-files-obsidian-git.md",
+    "Test.md",
+    "CodeDocumentation/Python/GuideCreator.md",
+    "CodeDocumentation/Python/TrajectoryFunctions.md",
+    "CodeDocumentation/Python/STLRead.md",
+    "CodeDocumentation/Python/rec_dict.md",
+    "CodeDocumentation/Python/Read_XML.md"
   ]
 }

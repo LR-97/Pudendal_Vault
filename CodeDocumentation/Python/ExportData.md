@@ -1,6 +1,6 @@
 # ExportData.py
 ## What is this script for?
-This script saves the selections made during the first steps of [[Pudendal Protocol#Axon Trajectories|axon trajectory generation]] as a list of points in a .txt file. It uses the Paraview api and must be executed in the Paraview's python shell.
+This script saves the selections made during the first steps of [[PudendalProtocol#Axon Trajectories|axon trajectory generation]] as a list of points in a .txt file. It uses the Paraview api and must be executed in the Paraview's python shell.
 
 *Note:* Remember to change the Subject variable to the appropriate participant ID, and the 'Side' variable to the correct side based on electrode position
 ## Dependencies

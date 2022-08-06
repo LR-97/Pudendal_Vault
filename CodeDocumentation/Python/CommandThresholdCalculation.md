@@ -5,8 +5,8 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 *Note:* When running CommandThresholdCalculation.py, the current working directory should be the 'Python' folder of the 'Pudendal' folder on the 'E:' drive
 
 ## Dependencies
-- [[Cell_rdg.py#MRG class|MRG]] from [[Cell_rdg.py|classes.Cell_rdg]] 
-- [[rec_dict.py]] from [[rec_dict.py|functions.rec_dict]]
+- [[Cell_rdg#MRG class|MRG]] from [[Cell_rdg|classes.Cell_rdg]] 
+- [[rec_dict]] from [[rec_dict|functions.rec_dict]]
 - [[Voltages]] from [[functions.Voltages]] 
 
 ## Functions
@@ -14,7 +14,7 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 -  **Parameters**
 	- *Traj:* 
 - **Description**
-	- The "Model" function takes as input an axons [[trajectory]] and return an MRG NEURON model ([[Cell_rdg.py#MRG class|MRG Object]]) that follows the input trajectory. Additionally, it sets simulation parameters and creates a [[rec_dict.py|recording dictionary]] that records membrane voltage of each 'node' compartment of the axon model throughout the duration of the simulation.
+	- The "Model" function takes as input an axons [[trajectory]] and return an MRG NEURON model ([[Cell_rdg#MRG class|MRG Object]]) that follows the input trajectory. Additionally, it sets simulation parameters and creates a [[rec_dict|recording dictionary]] that records membrane voltage of each 'node' compartment of the axon model throughout the duration of the simulation.
 
 - **Step-by-Step**
 	- Set simulation parameters:
@@ -23,14 +23,14 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 		- Set the temperature of the simulation using [h.celsius](https://www.neuron.yale.edu/neuron/static/py_doc/simctrl/programmatic.html?highlight=celsius#celsius)
 		- Set the initial voltage of the model compartments  (currently -80mV) using h.v_init
 	- Set the fiber diameter in micrometers (currently fixed at 7.3um)
-	- Create the axon model using the imported [[Cell_rdg.py]] module
-	- Create the axon's recording dictionary by looping through the compartments of the axon using the [[Cell_rdg.py#get_secs|'gets_secs' method of the MRG class]], checking if the compartment is a node (using [sec.name()](https://www.neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/topology.html?highlight=name#Section.name)), and if it is a node, using the imported [[rec_dict.py]] function.
-	- Pass the dictionary to the MRG object using the [[Cell_rdg.py#record|'record']] class method
+	- Create the axon model using the imported [[Cell_rdg]] module
+	- Create the axon's recording dictionary by looping through the compartments of the axon using the [[Cell_rdg#get_secs|'gets_secs' method of the MRG class]], checking if the compartment is a node (using [sec.name()](https://www.neuron.yale.edu/neuron/static/py_doc/modelspec/programmatic/topology.html?highlight=name#Section.name)), and if it is a node, using the imported [[rec_dict]] function.
+	- Pass the dictionary to the MRG object using the [[Cell_rdg#record|'record']] class method
 	- Return the MRG object created
 
 ### UpdateConfig
 - **Parameters**
-	- *MyCell*: The current axon, of type [[Cell_rdg.py#MRG class|MRG object]] 
+	- *MyCell*: The current axon, of type [[Cell_rdg#MRG class|MRG object]] 
 	-  *Name*: Name of the curren cell, of form branch_root_id (ex. G_S2_10)
 - **Description**
 	- Given a cell and the cell name, UpdateConfig loads the k-values along the fiber trajectory and assigns them to the transfer impedance attribute [[rx_xtra]] of their respective NEURON section. 
@@ -38,8 +38,8 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 - **Step-by-Step**
 	- load to memory the voltages (k-values) file for the current electrode configuration and fiber name
 	- extract the voltages/k-values from the last column in the file. 
-		- _Note:_ values in the file are not listed in spatially sequential order. They are ordered in the same order the [[Cell_rdg.py#get_secs|get_secs()]] method iterates through MRG sections
-	- Iterate through the MRG sections using [[Cell_rdg.py#get_secs|get_secs()]] and assign 
+		- _Note:_ values in the file are not listed in spatially sequential order. They are ordered in the same order the [[Cell_rdg#get_secs|get_secs()]] method iterates through MRG sections
+	- Iterate through the MRG sections using [[Cell_rdg#get_secs|get_secs()]] and assign 
 		- Set the rx_xtra attribute of the current section equal to its respective k-value
 			- _Note_: The k-values get scaled by 1e-6. [[Why?]]
 	- Return MyCell and the voltage values ndarray.
@@ -106,12 +106,12 @@ The 'CommandThresholdCalculation' script is the [[python scripts|python script]]
 
 ## Suggestions for improvement
 - Instead of saving the upper and lower bound to a .txt file, save only the midpoint value.
-- Modifiy [[CommandThresholdCalculation.py#Model| Model(traj)]] to also take as a parameter the desired fiber diameter
-- Give [[CommandThresholdCalculation.py#UpdateConfig|UpdateConfig]] a more descriptive name
-- In [[CommandThresholdCalculation.py#UpdateConfig|UpdateConfig]], get rid of the iSec index, instead use an enumerate() loop
-- [[CommandThresholdCalculation.py#UpdateConfig|UpdateConfig]] doesnt have to return anything, I think.
+- Modifiy [[CommandThresholdCalculation#Model| Model(traj)]] to also take as a parameter the desired fiber diameter
+- Give [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]] a more descriptive name
+- In [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]], get rid of the iSec index, instead use an enumerate() loop
+- [[CommandThresholdCalculation#UpdateConfig|UpdateConfig]] doesnt have to return anything, I think.
 - Encapsulate main code section in a main() function and use an "if name == main" type statement.
-- In [[CommandThresholdCalculation.py#UpdateStim|UpdateStim]], make the stim delay (a.k.a. On) and the pulse width optional function parameter
+- In [[CommandThresholdCalculation#UpdateStim|UpdateStim]], make the stim delay (a.k.a. On) and the pulse width optional function parameter
 
 ## Code I don't understand
 - ```sys.path.insert(0, "/Applications/NEURON-7.7/nrn/x86_64/bin")```
