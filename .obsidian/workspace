@@ -6,30 +6,23 @@
       {
         "id": "f7e6fa561707a033",
         "type": "leaf",
-        "dimension": 17.40644038294169,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Test.md",
-            "mode": "source",
-            "source": true
+            "file": "FAQ/SetUpInstructions.md",
+            "mode": "preview",
+            "backlinks": false,
+            "source": false
           }
-        },
-        "group": "a9e4d0c74edb0964"
+        }
       },
       {
-        "id": "6367433cb96176b5",
+        "id": "6301fbd70c0ee49a",
         "type": "leaf",
-        "dimension": 82.5935596170583,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Test.md",
-            "mode": "source",
-            "source": true
-          }
-        },
-        "group": "a9e4d0c74edb0964"
+          "type": "empty",
+          "state": {}
+        }
       }
     ],
     "direction": "vertical"
@@ -56,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#TODO",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +78,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,17 +95,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "6367433cb96176b5",
+  "active": "369a38a22ed16183",
   "lastOpenFiles": [
-    "Test.md",
-    "Pudendal Protocol.md",
+    "Code/Python/Centerlines.py.md",
+    "FAQ/SetUpInstructions.md",
     "FAQ/Managing Branches.md",
     "Code/Python/Cell_rdg.py.md",
+    "Code/Template.md",
+    "Code/Python/ExportData.py.md",
+    "Code/Python/rec_dict.py.md",
+    "Code/Python/Read_XML.py.md",
     "Code/Python/CommandThresholdCalculation.py.md",
-    "Code/Matlab/Electrode.m.md",
-    "Code/Matlab/Geometry.m.md",
-    "Code/Matlab/Mesh.m.md",
-    "Code/Matlab/Run.m.md",
-    "Code/Matlab/PreSolution.m.md"
+    "Pudendal Protocol.md"
   ]
 }
